@@ -1,0 +1,36 @@
+{
+  "check": {
+    "claim": "C3_ACE_bump_correction",
+    "evidence": {
+      "cases": [
+        {
+          "B": 4.0,
+          "case": "controlled_middle_dip",
+          "collapsed_before": true,
+          "endpoints_preserved": true,
+          "min_C_after": 1.0,
+          "min_C_before": -0.9599997731816616,
+          "positive_after": true
+        },
+        {
+          "B": 1.5,
+          "case": "heterogeneous_auxiliary",
+          "collapsed_before": true,
+          "endpoints_preserved": true,
+          "min_C_after": 0.55,
+          "min_C_before": -0.1634550442959073,
+          "positive_after": true
+        }
+      ]
+    },
+    "passed": true,
+    "scope": "Two constructive instances. This is a cumulative regression of the already-judged evidence, not a finite proof of Theorems 2.2-2.3.",
+    "status": "VERIFIED"
+  },
+  "fixed_command": "uv run --frozen python -m reproduction.run_all",
+  "negative_control": {
+    "rejected_as_intended": true,
+    "tamper": "Flip one contract-critical field"
+  },
+  "tested_verifier_git_sha": "7f03a7485362f580f6dad02b7de9f5e156d9262e"
+}

@@ -1,0 +1,17 @@
+{
+  "url": "https://ar5iv.labs.arxiv.org/html/2512.10339",
+  "retrieved_utc": "2026-07-28T12:12:59Z",
+  "sha256": "1ea66da8241cfd6e4e4cf06c4a441218c53ee72b49da82c388436d842cb74f81",
+  "bytes": 1409186,
+  "version_visible_in_source": "arXiv:2512.10339v2",
+  "anchors": {
+    "theorem_2_1": "S2.Thmtheorem1",
+    "theorem_2_2": "S2.Thmtheorem2",
+    "theorem_2_3": "S2.Thmtheorem3",
+    "table_2": "S3.T2",
+    "table_3": "S3.T3",
+    "synthetic_setup": "A3.SS1",
+    "collapse_prevalence": "A5.SS2"
+  },
+  "retrieval_user_agent": "OpenResearch-Reproduction/1.0 (claim audit; contact via github.com/MachineLearning-Nerd)"
+}

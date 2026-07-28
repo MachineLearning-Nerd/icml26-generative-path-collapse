@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "title": "Repro - Marginal Path Collapse",
+  "emoji": "🎯",
+  "space_id": "DineshAI/emv2qsi3TG",
+  "paper": "arXiv:2512.10339v2",
+  "tags": [
+    "icml2026-repro",
+    "paper-emv2qsi3TG"
+  ],
+  "updated_at": "2026-07-28T12:49:24Z",
+  "root": {
+    "slug": "index",
+    "title": "Repro - Marginal Path Collapse",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "current",
+        "title": "Current evidence (2026-07-28)",
+        "file": "pages/current/page.md",
+        "children": [
+          {
+            "slug": "claim-1",
+            "title": "Claim 1 — Marginal Path Collapse",
+            "file": "pages/claims/claim-1/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-2",
+            "title": "Claim 2 — Path Existence Criterion",
+            "file": "pages/claims/claim-2/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-3",
+            "title": "Claim 3 — ACE correction",
+            "file": "pages/claims/claim-3/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-4",
+            "title": "Claim 4 — synthetic metrics",
+            "file": "pages/claims/claim-4/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-5",
+            "title": "Claim 5 — CrossDock-Weak",
+            "file": "pages/claims/claim-5/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-6",
+            "title": "Claim 6 — prevalence scaling",
+            "file": "pages/claims/claim-6/page.md",
+            "children": []
+          }
+        ]
+      },
+      {
+        "slug": "method",
+        "title": "Method, command, and provenance",
+        "file": "pages/method/page.md",
+        "children": []
+      },
+      {
+        "slug": "visibility",
+        "title": "Evaluator visibility matrix",
+        "file": "pages/visibility/page.md",
+        "children": []
+      },
+      {
+        "slug": "report",
+        "title": "Illustrated report",
+        "file": "pages/report/page.md",
+        "children": []
+      },
+      {
+        "slug": "verify",
+        "title": "Historical rejected baseline — verify",
+        "file": "pages/verify/page.md",
+        "children": []
+      },
+      {
+        "slug": "overview",
+        "title": "Historical rejected baseline — overview",
+        "file": "pages/overview/page.md",
+        "children": []
+      }
+    ]
+  },
+  "agent_view_tokens": 4970,
+  "revision": "release-candidate-20260728"
+}
+

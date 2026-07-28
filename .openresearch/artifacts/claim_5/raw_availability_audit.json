@@ -1,0 +1,13 @@
+{
+  "audit_date_utc": "2026-07-28",
+  "official_commit": "66534202cb255b6891d5dcbe2e9e18af88ff5615",
+  "paper_crossdock_weak_pairs": 9,
+  "released_crossdocked2020_tasks": 76,
+  "paper_guidance_weight": 1.3,
+  "released_documented_guidance_weight": 1.4,
+  "paper_generated_sdf_files": 0,
+  "paper_docking_csv_files": 0,
+  "external_pretrained_submodules": 3,
+  "stated_setup_disk_gb": 15,
+  "cuda_required": true
+}

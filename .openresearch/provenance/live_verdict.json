@@ -1,0 +1,13 @@
+{
+  "dataset": "ICML-2026-agent-repro/verdicts",
+  "dataset_revision": "c8ac27e7fc9ea037cebc1cf2897ef52b3d565ebe",
+  "verdicts_json_sha256": "fdfa8e14157edbcdfda90d2ac3f4ba572955911be948d67ce33faad9482e1b25",
+  "filter": {
+    "field": "space_id",
+    "value": "DineshAI/emv2qsi3TG",
+    "match_count": 1
+  },
+  "space_revision": "9b6992fe238baa9afd6dae07652bae88a9c53bad",
+  "judged_at": "2026-07-27T16:27:11+00:00",
+  "score": "8/12"
+}

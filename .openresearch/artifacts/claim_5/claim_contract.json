@@ -1,0 +1,21 @@
+{
+  "claim_id": 5,
+  "paper_anchor": "Section 3; Table 3; Appendix C.2",
+  "benchmark": "CrossDock-Weak",
+  "ligand_pocket_pairs": 9,
+  "guidance_weight": 1.3,
+  "candidates_per_seed": 5,
+  "seeds": 2,
+  "denoising_steps": 500,
+  "paper_ACE": {
+    "validity_percent": 100.0,
+    "vina_mean": -5.72,
+    "overall_success_percent": 93.30
+  },
+  "paper_NR": {
+    "validity_percent": 84.77,
+    "vina_mean": -2.93
+  },
+  "acceptance": "Exact benchmark inputs and methods, raw generated molecules for both seeds, independently rerun validity and docking, and passing controls.",
+  "current_verdict": "BLOCKED"
+}

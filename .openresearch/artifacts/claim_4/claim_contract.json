@@ -1,0 +1,16 @@
+{
+  "claim_id": 4,
+  "paper_anchor": "Section 3; Table 2; Appendix C.1",
+  "methods": ["NR", "FKC", "ACE B=30"],
+  "seeds": [0, 1, 2, 3, 4],
+  "particles_per_run": 10000,
+  "sde_steps": 1000,
+  "metrics": ["W1", "W2", "MMD"],
+  "paper_means": {
+    "NR": [0.78, 1.07, 0.068],
+    "FKC": [2.13, 2.44, 1.43],
+    "ACE_B30": [0.28, 0.40, 0.027]
+  },
+  "acceptance": "Faithful method execution on the paper setup, five-seed raw samples, independently recomputed metrics and uncertainty, and passing controls.",
+  "current_verdict": "BLOCKED"
+}

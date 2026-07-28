@@ -1,0 +1,34 @@
+{
+  "check": {
+    "claim": "C1_marginal_path_collapse",
+    "evidence": {
+      "C_at_collapse": -9.376471042500807,
+      "C_at_t0": 0.4999774150805104,
+      "C_at_t0.999": 250130.23120601813,
+      "collapse_time_argmin": 0.8880555277638819,
+      "gamma": [
+        1.0,
+        -0.5
+      ],
+      "schedules": [
+        "polynomial",
+        "sigmoid"
+      ],
+      "truncated_logZ_by_limit": {
+        "120": 67504.58841187999,
+        "20": 1870.7653108121078,
+        "200": 187523.2532593247,
+        "60": 16872.10684497789
+      }
+    },
+    "passed": true,
+    "scope": "Concrete Gaussian witness; corroborates the existence phenomenon.",
+    "status": "VERIFIED"
+  },
+  "fixed_command": "uv run --frozen python -m reproduction.run_all",
+  "negative_control": {
+    "rejected_as_intended": true,
+    "tamper": "Flip one contract-critical field"
+  },
+  "tested_verifier_git_sha": "7f03a7485362f580f6dad02b7de9f5e156d9262e"
+}

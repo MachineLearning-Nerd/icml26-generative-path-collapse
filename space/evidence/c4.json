@@ -1,0 +1,88 @@
+{
+  "check": {
+    "claim": "C4_synthetic_distributional_metrics",
+    "evidence": {
+      "confidence": "LOW",
+      "exact_contract": {
+        "methods": [
+          "NR",
+          "FKC",
+          "ACE_B30"
+        ],
+        "metrics": [
+          "W1",
+          "W2",
+          "MMD"
+        ],
+        "paper_means": {
+          "ACE_B30": [
+            0.28,
+            0.4,
+            0.027
+          ],
+          "FKC": [
+            2.13,
+            2.44,
+            1.43
+          ],
+          "NR": [
+            0.78,
+            1.07,
+            0.068
+          ]
+        },
+        "particles_per_run": 10000,
+        "sde_steps": 1000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "final_verdict": "BLOCKED",
+      "historical_judge_verdict": "TOY",
+      "missing_capabilities": [
+        "Exact trained toy-expert checkpoints or raw samples for all five seeds",
+        "Authorized CUDA execution for the released full evaluator, or an author-validated CPU implementation"
+      ],
+      "routes": [
+        {
+          "finding": "The official commit contains code but no PretrainedToyModels checkpoints, sample arrays, raw results CSV, or notebook outputs; GitHub releases have zero assets and exact-paper HF searches found no model or dataset.",
+          "result": "INCONCLUSIVE",
+          "route": 1,
+          "route_type": "exact_public_artifact_replay"
+        },
+        {
+          "finding": "The released evaluator hardcodes CUDA. Rebuilding the three used experts requires 14,000 batch-1024 training iterations; the authors specify an NVIDIA GPU and about 30 A6000 minutes. GPU execution is outside the authorized compute contract.",
+          "result": "INCONCLUSIVE",
+          "route": 2,
+          "route_type": "from_source_cpu_reconstruction"
+        },
+        {
+          "finding": "The smallest exact Table 2 replay is 15 method-seed runs and 150,000,000 particle-steps. One 10k-by-10k float64 OT cost matrix is 800 MB; the released MMD path forms a 20k-by-20k Gram matrix with 400,000,000 entries before temporaries. No raw samples exist on which to run an independent metric.",
+          "result": "INCONCLUSIVE",
+          "route": 3,
+          "route_type": "independent_scope_and_metric_audit"
+        },
+        {
+          "falsified": false,
+          "finding": "The claim is a stochastic result for unreleased learned parameters. Without those parameters or assumption-matched regeneration, a different model, proxy sampler, or paper-table arithmetic cannot contradict the exact empirical claim.",
+          "result": "NO_VALID_COUNTEREXAMPLE",
+          "route": 4,
+          "route_type": "assumption_preserving_falsification"
+        }
+      ]
+    },
+    "passed": true,
+    "scope": "Four verification-oriented routes completed; no faithful replay or valid falsification is possible from the released artifacts under CPU-only authorization.",
+    "status": "BLOCKED"
+  },
+  "fixed_command": "uv run --frozen python -m reproduction.run_all",
+  "negative_control": {
+    "rejected_as_intended": true,
+    "tamper": "Remove the mandatory fourth falsification route"
+  },
+  "tested_verifier_git_sha": "7f03a7485362f580f6dad02b7de9f5e156d9262e"
+}

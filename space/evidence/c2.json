@@ -1,0 +1,922 @@
+{
+  "check": {
+    "claim": "C2_path_existence_criterion",
+    "evidence": {
+      "cases": 60,
+      "criterion_quadrature_agreement": "60/60",
+      "max_analytic_logZ_relative_error": 4.107305928547298e-15,
+      "rows": [
+        {
+          "C": 0.6535798407786024,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            2.0924042183036358,
+            -1.1744667844096757
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "polynomial",
+            "linear"
+          ],
+          "t": 0.11322210842282328
+        },
+        {
+          "C": -13.649467445049476,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            2.533175598000681,
+            -2.7818889431943044
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "sigmoid",
+            "ddpm"
+          ],
+          "t": 0.6835972487871987
+        },
+        {
+          "C": -1.013566607846857,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.8590624786635572,
+            -2.8376810594694204
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "polynomial",
+            "cosine"
+          ],
+          "t": 0.10219080013611848
+        },
+        {
+          "C": 2.7796527974680583,
+          "analytic_logZ_relative_error": 2.722632847842561e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.6435106914689235,
+            -0.5839639382636609
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "ddpm",
+            "ddpm"
+          ],
+          "t": 0.2405244964820472
+        },
+        {
+          "C": 5.580777791466876,
+          "analytic_logZ_relative_error": 1.873021049611105e-15,
+          "criterion_positive": true,
+          "gammas": [
+            2.6579473058747163,
+            -1.8536530506227293
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "linear",
+            "polynomial"
+          ],
+          "t": 0.4381497769581268
+        },
+        {
+          "C": -1.6756754781322303,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.5707991778636574,
+            -0.8107081912489098
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "linear",
+            "ddpm"
+          ],
+          "t": 0.6177516092594001
+        },
+        {
+          "C": 79.4568605436819,
+          "analytic_logZ_relative_error": 1.750217568727774e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.038462778703135,
+            -1.4591938856547086
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "sigmoid",
+            "cosine"
+          ],
+          "t": 0.8846682710209841
+        },
+        {
+          "C": -1.5607784143628014,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            2.213854961201737,
+            -2.1261481906695407
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "cosine",
+            "ddpm"
+          ],
+          "t": 0.41113713918328304
+        },
+        {
+          "C": -1.24482749436312,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.8377412625560281,
+            -2.3037208504852043
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "cosine",
+            "sigmoid"
+          ],
+          "t": 0.3481935004471646
+        },
+        {
+          "C": 0.5159083898353414,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            1.7145883970794726,
+            -2.7237195858725007
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "linear",
+            "cosine"
+          ],
+          "t": 0.3862361573672562
+        },
+        {
+          "C": 2.507709468021936,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            1.9288245768244023,
+            -1.3046734776898554
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "ddpm",
+            "sigmoid"
+          ],
+          "t": 0.3703289804057066
+        },
+        {
+          "C": -3.0270852932337404,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.479047501320403,
+            -2.725685880011981
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "polynomial",
+            "polynomial"
+          ],
+          "t": 0.598549715748834
+        },
+        {
+          "C": -3.2778869682427314,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.710038358955962,
+            -2.5816103691334944
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "sigmoid",
+            "ddpm"
+          ],
+          "t": 0.29149555439436176
+        },
+        {
+          "C": 2.7495119443239786,
+          "analytic_logZ_relative_error": 2.686715778853367e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.6912105770267596,
+            -0.6464200870129859
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "ddpm",
+            "polynomial"
+          ],
+          "t": 0.22022357351587127
+        },
+        {
+          "C": -0.7846044281641038,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.6258484166232174,
+            -2.490810675718236
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "ddpm",
+            "polynomial"
+          ],
+          "t": 0.14161704085152768
+        },
+        {
+          "C": -1.4663966150175027,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.5113795995538206,
+            -0.9962826112731383
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "cosine",
+            "linear"
+          ],
+          "t": 0.5642659087894806
+        },
+        {
+          "C": -77.8134484055696,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.2467403320473065,
+            -2.1799871948908986
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "cosine",
+            "linear"
+          ],
+          "t": 0.8536904884051983
+        },
+        {
+          "C": 24.978469791208852,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            1.4127754206120713,
+            -0.7637381989255738
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "sigmoid",
+            "ddpm"
+          ],
+          "t": 0.841723642454294
+        },
+        {
+          "C": 1.6891405813271683,
+          "analytic_logZ_relative_error": 1.690278142309779e-16,
+          "criterion_positive": true,
+          "gammas": [
+            1.60094288678946,
+            -2.8864762342268433
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "linear",
+            "sigmoid"
+          ],
+          "t": 0.44018289987926046
+        },
+        {
+          "C": 0.811057839540088,
+          "analytic_logZ_relative_error": 2.169153195300165e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.0505336300384447,
+            -2.9877412630883105
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "ddpm",
+            "cosine"
+          ],
+          "t": 0.46803611144727686
+        },
+        {
+          "C": 6.5764227367987615,
+          "analytic_logZ_relative_error": 4.107305928547298e-15,
+          "criterion_positive": true,
+          "gammas": [
+            2.3943221132707286,
+            -1.7435567387190474
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "sigmoid",
+            "sigmoid"
+          ],
+          "t": 0.7286285605710461
+        },
+        {
+          "C": -29.26297017811779,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.536639623389177,
+            -2.3362089294718236
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "ddpm",
+            "ddpm"
+          ],
+          "t": 0.8456477492907026
+        },
+        {
+          "C": -39.919668159698624,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.7873315832022629,
+            -2.3225377926907735
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "cosine",
+            "cosine"
+          ],
+          "t": 0.8743409519397172
+        },
+        {
+          "C": -30.915461964048887,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.5367657624134232,
+            -2.6591002256139395
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "linear",
+            "cosine"
+          ],
+          "t": 0.8657681436887709
+        },
+        {
+          "C": -16.462945401656505,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.8719100305812448,
+            -2.9315720345573872
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "polynomial",
+            "cosine"
+          ],
+          "t": 0.7578990620344563
+        },
+        {
+          "C": 9.866794802560271,
+          "analytic_logZ_relative_error": 1.2300331954182828e-16,
+          "criterion_positive": true,
+          "gammas": [
+            1.6999698095195805,
+            -1.0809322990982597
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "cosine",
+            "cosine"
+          ],
+          "t": 0.8388241278267756
+        },
+        {
+          "C": -28.17735300488286,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.1653256807307315,
+            -1.8473360190554673
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "ddpm",
+            "sigmoid"
+          ],
+          "t": 0.844813852784924
+        },
+        {
+          "C": -1.7454498971390071,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.6012767779710866,
+            -2.330015489141402
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "linear",
+            "ddpm"
+          ],
+          "t": 0.12269229209081685
+        },
+        {
+          "C": 7.55680981071837,
+          "analytic_logZ_relative_error": 4.511339931359834e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.298049432066851,
+            -0.5399793238089299
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "linear",
+            "ddpm"
+          ],
+          "t": 0.5102069786096625
+        },
+        {
+          "C": 2.1200942601044153,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            2.8227605519925154,
+            -0.6652062418101868
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "sigmoid",
+            "cosine"
+          ],
+          "t": 0.15335200701368112
+        },
+        {
+          "C": -0.5092725215585276,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.360774947010313,
+            -1.5757468298695834
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "cosine",
+            "cosine"
+          ],
+          "t": 0.5497854737827657
+        },
+        {
+          "C": -0.3797610136924552,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.8113867645882087,
+            -1.220826892518944
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "cosine",
+            "sigmoid"
+          ],
+          "t": 0.5432724017386142
+        },
+        {
+          "C": 0.05852189897772053,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            2.5242769397819442,
+            -1.9011898800154645
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "sigmoid",
+            "polynomial"
+          ],
+          "t": 0.4303170741447142
+        },
+        {
+          "C": 2.528576425452195,
+          "analytic_logZ_relative_error": 1.2197296182541942e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.545302427427276,
+            -2.066266156049384
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "ddpm",
+            "cosine"
+          ],
+          "t": 0.39552352887334474
+        },
+        {
+          "C": 0.8310780015474326,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            1.881528776303218,
+            -1.9848105040329207
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "linear",
+            "cosine"
+          ],
+          "t": 0.2163788305492254
+        },
+        {
+          "C": -36.41912090663587,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.5162758418703166,
+            -2.7748974041557424
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "cosine",
+            "linear"
+          ],
+          "t": 0.7581650241452016
+        },
+        {
+          "C": -2.803020385852051,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.5384600934280617,
+            -2.574509963195257
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "linear",
+            "linear"
+          ],
+          "t": 0.39203692620661656
+        },
+        {
+          "C": -3.2733400255838916,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.6965750929140997,
+            -2.131536440841596
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "sigmoid",
+            "polynomial"
+          ],
+          "t": 0.6621216565278291
+        },
+        {
+          "C": 3.0727029042731946,
+          "analytic_logZ_relative_error": 3.1041320007513423e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.859503567355227,
+            -0.8170427556531195
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "linear",
+            "cosine"
+          ],
+          "t": 0.14757132128027078
+        },
+        {
+          "C": -63.14055062896715,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.4519262707772236,
+            -1.5744351529464415
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "polynomial",
+            "sigmoid"
+          ],
+          "t": 0.8811698575488357
+        },
+        {
+          "C": 14.31335300417835,
+          "analytic_logZ_relative_error": 1.3484777152093864e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.4392279702545707,
+            -1.2721434067981525
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "cosine",
+            "polynomial"
+          ],
+          "t": 0.7904961633514542
+        },
+        {
+          "C": 107.701094504684,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            2.7032679318442248,
+            -1.776766263859113
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "ddpm",
+            "polynomial"
+          ],
+          "t": 0.8959338785287343
+        },
+        {
+          "C": 0.2059851221557638,
+          "analytic_logZ_relative_error": 1.2993314983917322e-16,
+          "criterion_positive": true,
+          "gammas": [
+            1.2898588634192505,
+            -0.9567809473164062
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "polynomial",
+            "cosine"
+          ],
+          "t": 0.7498683184890033
+        },
+        {
+          "C": 1.9031959835340029,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            2.169723513928378,
+            -2.89603407944488
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "sigmoid",
+            "cosine"
+          ],
+          "t": 0.6985988026414033
+        },
+        {
+          "C": 1.8549226583747256,
+          "analytic_logZ_relative_error": 1.8199869276424616e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.6517535238691945,
+            -1.1178668508052687
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "sigmoid",
+            "linear"
+          ],
+          "t": 0.6360494794519488
+        },
+        {
+          "C": 63.00444288324921,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            2.286546341636882,
+            -0.9176323219556805
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "ddpm",
+            "polynomial"
+          ],
+          "t": 0.8282046129728439
+        },
+        {
+          "C": -0.9419587158587293,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.9035019188755573,
+            -1.9458397873156816
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "ddpm",
+            "linear"
+          ],
+          "t": 0.5208177988943001
+        },
+        {
+          "C": 1.9051423015129563,
+          "analytic_logZ_relative_error": 3.7214584123095424e-16,
+          "criterion_positive": true,
+          "gammas": [
+            1.8085868184872997,
+            -0.72233910061568
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "sigmoid",
+            "cosine"
+          ],
+          "t": 0.5571164803646196
+        },
+        {
+          "C": -3.56429144697682,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.5160222066607754,
+            -2.4316230030634713
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "ddpm",
+            "cosine"
+          ],
+          "t": 0.5718960226567604
+        },
+        {
+          "C": 0.12816862660644257,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            1.2992040907066624,
+            -0.9687692893194623
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "polynomial",
+            "ddpm"
+          ],
+          "t": 0.256085918765444
+        },
+        {
+          "C": -0.06530996368200714,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.944219731294648,
+            -2.0055979409490643
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "cosine",
+            "cosine"
+          ],
+          "t": 0.15781221242390142
+        },
+        {
+          "C": -4.259937989353455,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.7499320591465461,
+            -2.3602436982066206
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "polynomial",
+            "linear"
+          ],
+          "t": 0.4104533854276154
+        },
+        {
+          "C": -5.827326690238971,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.6572387461374283,
+            -2.3147021594394417
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "polynomial",
+            "linear"
+          ],
+          "t": 0.41607336668637407
+        },
+        {
+          "C": 13.958335168403664,
+          "analytic_logZ_relative_error": 2.7818174626664935e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.6838065778018305,
+            -1.6807508418750288
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "sigmoid",
+            "cosine"
+          ],
+          "t": 0.712733694191098
+        },
+        {
+          "C": 1.6413581670428843,
+          "analytic_logZ_relative_error": 0.0,
+          "criterion_positive": true,
+          "gammas": [
+            2.7883099002794145,
+            -0.8185075226222658
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "sigmoid",
+            "linear"
+          ],
+          "t": 0.15626100285537448
+        },
+        {
+          "C": 0.9625254572905608,
+          "analytic_logZ_relative_error": 1.1835613185022685e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.6721357358682982,
+            -2.085174948368608
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "cosine",
+            "sigmoid"
+          ],
+          "t": 0.23083473295718424
+        },
+        {
+          "C": 3.7792068484775023,
+          "analytic_logZ_relative_error": 4.367836475907946e-16,
+          "criterion_positive": true,
+          "gammas": [
+            2.184333594318184,
+            -1.295043469614495
+          ],
+          "numerical_integrable": true,
+          "schedules": [
+            "linear",
+            "ddpm"
+          ],
+          "t": 0.46828426309385984
+        },
+        {
+          "C": -9.16504464854869,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            1.7686746513613179,
+            -2.4741643311496757
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "polynomial",
+            "linear"
+          ],
+          "t": 0.5630068026588021
+        },
+        {
+          "C": -131.50954058621164,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.9930873682396714,
+            -2.5203418795339205
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "cosine",
+            "sigmoid"
+          ],
+          "t": 0.8909562666942558
+        },
+        {
+          "C": -1.9439044105582637,
+          "analytic_logZ_relative_error": null,
+          "criterion_positive": false,
+          "gammas": [
+            0.9573583116892967,
+            -2.907547850310668
+          ],
+          "numerical_integrable": false,
+          "schedules": [
+            "linear",
+            "cosine"
+          ],
+          "t": 0.4850083972602149
+        }
+      ],
+      "seed": 0
+    },
+    "passed": true,
+    "scope": "Exact for the tested one-dimensional Gaussian family; the paper's universally quantified compact-support theorem remains a theorem, not something finite sampling alone can prove.",
+    "status": "VERIFIED"
+  },
+  "fixed_command": "uv run --frozen python -m reproduction.run_all",
+  "negative_control": {
+    "rejected_as_intended": true,
+    "tamper": "Flip one contract-critical field"
+  },
+  "tested_verifier_git_sha": "7f03a7485362f580f6dad02b7de9f5e156d9262e"
+}

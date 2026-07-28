@@ -1,0 +1,166 @@
+{
+  "check": {
+    "claim": "C6_collapse_fraction_scaling",
+    "evidence": {
+      "domain_audit": {
+        "all_ordered_triplets": 125,
+        "eligibility_rule": "ratio_numerator_schedule != ratio_denominator_schedule",
+        "epsilon": 1e-12,
+        "heterogeneous_triplets_excluding_all_equal": 120,
+        "independent_grid_points": 20001,
+        "likelihood_nonhomogeneous_triplets": 100,
+        "released_notebook_grid_points": 200,
+        "seeds": "none; exhaustive deterministic enumeration",
+        "t_interval": "[0, 0.99]"
+      },
+      "independent_checker_rows": [
+        {
+          "classification_sha256": "d0335cc8bb01b1439d48add67fd6abaf8e7cac312277345ae97c87956929665b",
+          "eligible_triplets": 100,
+          "expected_collapses": 41,
+          "guidance_weight": 1.0,
+          "minimum_C_over_eligible_triplets": -9724.484181772661,
+          "observed_collapses": 41,
+          "observed_fraction": 0.41
+        },
+        {
+          "classification_sha256": "5a418029ed444d9c413f26ac021daa376fb981275f975686820af98ca415a229",
+          "eligible_triplets": 100,
+          "expected_collapses": 47,
+          "guidance_weight": 1.1,
+          "minimum_C_over_eligible_triplets": -10710.708385861293,
+          "observed_collapses": 47,
+          "observed_fraction": 0.47
+        },
+        {
+          "classification_sha256": "90a83a598ac39631b01c531c891ff7b5b1ccbcdb440d99eeb417be1d80fd809a",
+          "eligible_triplets": 100,
+          "expected_collapses": 52,
+          "guidance_weight": 1.5,
+          "minimum_C_over_eligible_triplets": -14655.605202215822,
+          "observed_collapses": 52,
+          "observed_fraction": 0.52
+        },
+        {
+          "classification_sha256": "94d89a91bf8aee6176aae6a0f421bd8d2240a722e0451ac42915145be92cfa05",
+          "eligible_triplets": 100,
+          "expected_collapses": 66,
+          "guidance_weight": 2.0,
+          "minimum_C_over_eligible_triplets": -19586.72622265898,
+          "observed_collapses": 66,
+          "observed_fraction": 0.66
+        },
+        {
+          "classification_sha256": "d5472b199b0e509aa80ab30232b5d1e39a4021798bc462421d02944ebfb05447",
+          "eligible_triplets": 100,
+          "expected_collapses": 77,
+          "guidance_weight": 7.5,
+          "minimum_C_over_eligible_triplets": -73829.05744753375,
+          "observed_collapses": 77,
+          "observed_fraction": 0.77
+        },
+        {
+          "classification_sha256": "d35ea38dd2e2e8295f490fd3031ed089ff8324360435c629e2a0d53bfe12be22",
+          "eligible_triplets": 100,
+          "expected_collapses": 80,
+          "guidance_weight": 15.0,
+          "minimum_C_over_eligible_triplets": -147795.87275418115,
+          "observed_collapses": 80,
+          "observed_fraction": 0.8
+        }
+      ],
+      "paper_table_E5_expected_counts": [
+        41,
+        47,
+        52,
+        66,
+        77,
+        80
+      ],
+      "per_triplet_classification_agreement": true,
+      "reference_checker_rows": [
+        {
+          "classification_sha256": "d0335cc8bb01b1439d48add67fd6abaf8e7cac312277345ae97c87956929665b",
+          "eligible_triplets": 100,
+          "expected_collapses": 41,
+          "guidance_weight": 1.0,
+          "minimum_C_over_eligible_triplets": -9724.484181772661,
+          "observed_collapses": 41,
+          "observed_fraction": 0.41
+        },
+        {
+          "classification_sha256": "5a418029ed444d9c413f26ac021daa376fb981275f975686820af98ca415a229",
+          "eligible_triplets": 100,
+          "expected_collapses": 47,
+          "guidance_weight": 1.1,
+          "minimum_C_over_eligible_triplets": -10710.708385861293,
+          "observed_collapses": 47,
+          "observed_fraction": 0.47
+        },
+        {
+          "classification_sha256": "90a83a598ac39631b01c531c891ff7b5b1ccbcdb440d99eeb417be1d80fd809a",
+          "eligible_triplets": 100,
+          "expected_collapses": 52,
+          "guidance_weight": 1.5,
+          "minimum_C_over_eligible_triplets": -14655.605202215822,
+          "observed_collapses": 52,
+          "observed_fraction": 0.52
+        },
+        {
+          "classification_sha256": "94d89a91bf8aee6176aae6a0f421bd8d2240a722e0451ac42915145be92cfa05",
+          "eligible_triplets": 100,
+          "expected_collapses": 66,
+          "guidance_weight": 2.0,
+          "minimum_C_over_eligible_triplets": -19586.72622265898,
+          "observed_collapses": 66,
+          "observed_fraction": 0.66
+        },
+        {
+          "classification_sha256": "d5472b199b0e509aa80ab30232b5d1e39a4021798bc462421d02944ebfb05447",
+          "eligible_triplets": 100,
+          "expected_collapses": 77,
+          "guidance_weight": 7.5,
+          "minimum_C_over_eligible_triplets": -73829.05744753375,
+          "observed_collapses": 77,
+          "observed_fraction": 0.77
+        },
+        {
+          "classification_sha256": "d35ea38dd2e2e8295f490fd3031ed089ff8324360435c629e2a0d53bfe12be22",
+          "eligible_triplets": 100,
+          "expected_collapses": 80,
+          "guidance_weight": 15.0,
+          "minimum_C_over_eligible_triplets": -147795.87275418115,
+          "observed_collapses": 80,
+          "observed_fraction": 0.8
+        }
+      ],
+      "source_code_revision": "ziseoklee/ACE@66534202cb255b6891d5dcbe2e9e18af88ff5615"
+    },
+    "passed": true,
+    "scope": "Exact exhaustive reproduction of Table E.5 over the complete 100-case heterogeneous steering domain stated by the paper.",
+    "status": "VERIFIED"
+  },
+  "fixed_command": "uv run --frozen python -m reproduction.run_all",
+  "negative_control": {
+    "expected_collapses": [
+      41,
+      47,
+      52,
+      66,
+      77,
+      80
+    ],
+    "observed_collapses": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "reason": "With three positive precision terms, collapse is impossible.",
+    "rejected_as_intended": true,
+    "tamper": "Replace the ratio denominator's negative exponent with a positive exponent"
+  },
+  "tested_verifier_git_sha": "7f03a7485362f580f6dad02b7de9f5e156d9262e"
+}
