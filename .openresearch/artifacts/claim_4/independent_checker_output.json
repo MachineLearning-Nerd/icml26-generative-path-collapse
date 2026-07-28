@@ -1,0 +1,7 @@
+{
+  "route_count": 4,
+  "first_three_route_types_distinct": true,
+  "fourth_route_is_assumption_preserving_falsification": true,
+  "valid_counterexample_found": false,
+  "scientific_verdict": "BLOCKED"
+}

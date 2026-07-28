@@ -1,0 +1,15 @@
+{
+  "audit_date_utc": "2026-07-28",
+  "official_commit": "66534202cb255b6891d5dcbe2e9e18af88ff5615",
+  "pretrained_toy_model_files": 0,
+  "raw_result_csv_files": 0,
+  "notebook_output_cells": 0,
+  "github_releases": 2,
+  "github_release_assets": 0,
+  "huggingface_exact_paper_model_hits": 0,
+  "huggingface_exact_paper_dataset_hits": 0,
+  "minimum_table2_method_seed_runs": 15,
+  "minimum_particle_steps": 150000000,
+  "one_ot_cost_matrix_float64_bytes": 800000000,
+  "one_combined_mmd_gram_float32_bytes": 1600000000
+}
