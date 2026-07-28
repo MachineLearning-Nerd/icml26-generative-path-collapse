@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/ziseoklee/ACE",
+  "commit": "66534202cb255b6891d5dcbe2e9e18af88ff5615",
+  "committed_at": "2026-07-20T10:58:11+09:00",
+  "files": {
+    "2d_synthetic/ace_demo.ipynb": "7af13f67e2cfc8d9893d85293d9f25d67f8c645c8b21c113035822a7008d1212",
+    "2d_synthetic/ace_eval_script.py": "0f6af68e795892dd2c4a4939058b353b03e801f8ec77371dce51ed206e68a1b2",
+    "2d_synthetic/ace_lib/interpolant_schedules.json": "b05304a2fb924092a18972ae40d9df6406d386c101d58e5473d5a16ce7531b53",
+    "2d_synthetic/uv.lock": "47fdf13b0ea90357e91ff72075fea4ad004405b7c3aa750f0a2273e5f72ba893",
+    "molecule/README.md": "ea613ef7bcda23fb8b19c960716114642e5eb89e6bb0176d8c246985364ba076",
+    "molecule/uv.lock": "13fdcdb8dd20598e77d430783e6d13299923f3b1372ad7ff144fe5854d86b133"
+  }
+}

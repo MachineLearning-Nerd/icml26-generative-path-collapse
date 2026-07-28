@@ -1,0 +1,13 @@
+{
+  "claim_id": 1,
+  "status": "VERIFIED",
+  "statement": "There exists a ratio-of-densities composition with integrable endpoints and a non-normalizable intermediate density.",
+  "quantifier": "existential",
+  "pass_conditions": [
+    "C(0) > 0",
+    "C(0.999) > 0",
+    "min_{t in the audited grid} C(t) < 0",
+    "the truncated log normalizer grows by more than 5 nats between L=20 and L=200"
+  ],
+  "failure_exit": "The cumulative verifier exits nonzero if any pass condition fails."
+}
