@@ -67,17 +67,18 @@ def criterion(
 
 
 def gaussian_log_integral_numeric(precision: float, limit: float) -> float:
-    """Log integral of exp(-precision*x^2/2) on [-limit, limit].
+    """Numerical log integral of exp(-precision*x^2/2).
 
-    Positive precision is integrated with an independent adaptive quadrature.
-    Non-positive precision uses a stable log-trapezoid calculation, which also
-    exposes divergence as the truncation limit grows.
+    Positive precision is integrated over the real line with an independent
+    adaptive quadrature. Non-positive precision uses a stable log-trapezoid
+    calculation on ``[-limit, limit]``, which exposes divergence as the
+    truncation limit grows.
     """
     if precision > 0.0:
         value, _ = quad(
             lambda x: math.exp(-0.5 * precision * x * x),
-            -limit,
-            limit,
+            -math.inf,
+            math.inf,
             epsabs=1e-12,
             epsrel=1e-12,
             limit=300,
