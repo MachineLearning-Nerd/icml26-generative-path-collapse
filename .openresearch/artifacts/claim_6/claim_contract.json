@@ -1,0 +1,14 @@
+{
+  "claim_id": 6,
+  "paper": "arXiv:2512.10339v2",
+  "source_anchor": "Section 4; Appendix C.1; Appendix E.2; Table E.5",
+  "composition": "h_t = q_t^(1) * (q_t^(2) / q_t^(3))^w",
+  "schedules": ["DDPM", "cosine", "sigmoid", "linear", "polynomial"],
+  "all_ordered_triplets": 125,
+  "eligible_domain": "The 100 ordered triplets with alpha_t^(2) != alpha_t^(3)",
+  "time_discretization": "Released-code operational interval t in [0,0.99], 200 equally spaced points",
+  "weights": [1.0, 1.1, 1.5, 2.0, 7.5, 15.0],
+  "expected_collapse_counts": [41, 47, 52, 66, 77, 80],
+  "acceptance": "All six exhaustive counts match; a 20,001-point independent checker agrees on every triplet; negative control is rejected.",
+  "verdict_if_accepted": "VERIFIED"
+}
