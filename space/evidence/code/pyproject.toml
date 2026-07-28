@@ -1,0 +1,14 @@
+[project]
+name = "ace-claim-reproduction"
+version = "0.1.0"
+description = "Evidence-gated reproduction of arXiv 2512.10339"
+requires-python = "==3.11.*"
+dependencies = [
+    "marimo==0.16.5",
+    "matplotlib==3.10.6",
+    "numpy==2.3.3",
+    "scipy==1.16.2",
+]
+
+[tool.uv]
+package = false
