@@ -1,67 +1,90 @@
-# Reproduction: collapse in diffusion steering
+# On the Collapse of Generative Paths
 
-[![Open in molab](https://marimo.io/molab-shield.svg)](https://molab.marimo.io/github/MachineLearning-Nerd/icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion/blob/main/notebooks/collapse_reproduction.py)
+[![Open in molab](https://marimo.io/molab-shield.svg)](https://molab.marimo.io/github/MachineLearning-Nerd/icml26-generative-path-collapse/blob/main/notebooks/collapse_reproduction.py)
 
-This repository reproduces the six judged claims from
-[On the Collapse of Generative Paths: A Criterion and Correction for Diffusion Steering](https://arxiv.org/abs/2512.10339).
-The strongest new result replaces a random two-expert proxy with the paper's
-complete five-schedule, three-expert enumeration: the reproduced collapse
-fractions are **41%, 47%, 52%, 66%, 77%, and 80%**, exactly matching Appendix
-E.2 at guidance scales \(1,1.1,1.5,2,7.5,15\).
+Independent claim-by-claim reproduction audit for [*On the Collapse of Generative Paths: A Criterion and Correction for Diffusion Steering*](https://arxiv.org/abs/2512.10339), by Ziseok Lee, Minyeong Hwang, Wooyeol Lee, Sanghyun Jo, Jihyung Ko, Young Bin Park, Jae-Mun Choi, Eunho Yang, and Kyungsu Kim. This repository is an independent reproduction and evidence audit, not the authors' official implementation.
 
-Claims 1–3 continue to pass their cumulative Gaussian checks. Claims 4 and 5
-remain honestly **BLOCKED** after four distinct routes each: exact checkpoints,
-samples, and task identifiers are not publicly recoverable, and the released
-full pipelines require CUDA or target a different benchmark. They are not
-replaced by toy or proxy evidence.
+## Paper in one paragraph
 
-- **Assessment:** Claims 1, 2, 3, and 6 VERIFIED; Claims 4 and 5 BLOCKED.
-- **Paper versus observed:** Claim 6 paper
-  `[41, 47, 52, 66, 77, 80]`; observed
-  `[41, 47, 52, 66, 77, 80]`, with all 600 individual classifications
-  independently confirmed.
-- **Substitutions/downscaling:** none for Claim 6's stated finite domain.
-  Claims 4–5 were not downscaled because a changed model or benchmark would
-  not test the exact claim.
-- **Compute:** local CPU only, one thread, locked Python 3.11/`uv` environment;
-  the longest formal run took 40 seconds. No GPU was used.
-- **Score:** the live judged score remains **8/12**. A conservative
-  post-evaluation forecast is **8–10/12**, with **10/12** the best-supported
-  possible total—not a judge result.
-- **Publication:** evaluator evidence is live in the existing
-  [Hugging Face Space at revision `0f454af`](https://huggingface.co/spaces/DineshAI/emv2qsi3TG/commit/0f454af2035b713178122b8bd6129cc74e50e11f).
-  Status: **awaiting the live judge**.
+The paper studies inference-time steering that composes diffusion or flow-model marginals by multiplying and dividing time-indexed densities. It identifies **Marginal Path Collapse**: valid endpoint distributions can produce an intermediate expression that is not normalizable. The paper gives a sharp sufficient Path Existence Criterion and proposes Adaptive Path Correction with Exponents (ACE), which uses time-varying exponents to stabilize the path. It also evaluates the correction on compositional image generation and flexible-pose scaffold decoration.
 
-Read the [illustrated technical report](reports/reproduction/report.md) or open
-the [self-contained marimo tutorial](notebooks/collapse_reproduction.py).
+## Audit headline
 
-## Experiment log
+The live judged score remains **8/12**. This audit records Claims 1, 2, 3, and 6 as **VERIFIED** and Claims 4 and 5 as **BLOCKED**. A conservative post-evaluation forecast is 8–10/12; that forecast is not a new judge result.
 
-Every experiment inherited the exact same command:
-`uv run --frozen python -m reproduction.run_all`.
+## Claim and evidence ledger
 
-| Branch / experiment | Purpose or change | Exact run command | Assessment / outcome | Compute |
-|---|---|---|---|---|
-| [`orx/judged-8-of-12-baseline`](https://github.com/MachineLearning-Nerd/icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion/tree/orx/judged-8-of-12-baseline) | Freeze and rerun the accepted theoretical evidence | `uv run --frozen python -m reproduction.run_all` | Claims 1–3 VERIFIED; 4–6 initially BLOCKED | local CPU, 1 thread, 25 s |
-| [`orx/exact-schedule-triplet-collapse-prevalence`](https://github.com/MachineLearning-Nerd/icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion/tree/orx/exact-schedule-triplet-collapse-prevalence) | Replace Claim 6's two-expert proxy with the exact finite domain | `uv run --frozen python -m reproduction.run_all` | Exact Table E.5 match | local CPU, 1 thread, 20 s |
-| [`orx/exact-claim-availability-and-falsification-audit`](https://github.com/MachineLearning-Nerd/icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion/tree/orx/exact-claim-availability-and-falsification-audit) | Complete four routes each for Claims 4–5 | `uv run --frozen python -m reproduction.run_all` | Both BLOCKED; no valid counterexample | local CPU, 1 thread, 40 s |
-| [`orx/evaluator-visible-release-candidate`](https://github.com/MachineLearning-Nerd/icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion/tree/orx/evaluator-visible-release-candidate) | Add canonical evidence pages, raw data, report, notebook, and final regression | `uv run --frozen python -m reproduction.run_all` | Cumulative suite PASS; Space release validated | local CPU, 1 thread, 25 s |
-| `main` | Public README, report, notebook, and evaluator-visible mirror | Not run as an experiment (publication surface) | Published; awaiting live judge | presentation only |
+| Claim | Audit status | How the result is produced |
+| --- | --- | --- |
+| 1. Marginal Path Collapse exists | **VERIFIED** | Construct a Gaussian witness with valid endpoints and a negative intermediate precision; show that the truncated log-normalizer diverges as the integration limit grows. |
+| 2. Path Existence Criterion | **VERIFIED** | Evaluate the scalar Gaussian precision criterion on 60 seeded compositions and compare it with independent numerical quadrature; all 60 verdicts agree and the maximum analytic-normalizer relative error is \(4.11\times10^{-15}\). |
+| 3. ACE correction | **VERIFIED** | Apply the ACE exponent bump to a controlled middle dip and a heterogeneous-schedule case; both paths become positive while endpoint exponents remain unchanged. Negative controls fail closed when the contract is tampered with. |
+| 4. Synthetic W1/W2/MMD table | **BLOCKED** | Audit four routes: public-artifact replay, CPU reconstruction, resource/metric feasibility, and assumption-preserving falsification. The exact learned checkpoints, samples, and raw table assets are unavailable, and a CUDA-only evaluator cannot be run under the authorized contract. |
+| 5. CrossDock-Weak table | **BLOCKED** | Audit the exact nine-task contract, generated SDF population, checkpoint availability, benchmark identity, and possible counterexamples. The public runner targets a different 76-task benchmark and no assumption-matched replay or falsification is available. |
+| 6. Collapse fraction versus guidance | **VERIFIED** | Reconstruct the five schedules, enumerate all \(5^3=125\) ordered triplets, retain the 100 eligible heterogeneous compositions, and independently recheck all classifications on a 20,001-point grid. The reproduced counts are 41%, 47%, 52%, 66%, 77%, and 80%, exactly matching the paper's finite table. |
 
-## Run locally
+Claims 4 and 5 are deliberately marked **BLOCKED**, not failed or verified. Proxy models, a different benchmark, or arithmetic on printed aggregates would not test their original assumptions.
+
+## How each claim is produced
+
+Each claim follows the same evidence path:
+
+1. Freeze the paper's quantifiers, inputs, and expected conclusion in the claim contract under `.openresearch/artifacts/`.
+2. Implement the primary derivation, construction, availability audit, or exact enumeration in `reproduction/`.
+3. Run an independent checker and a contract-breaking negative control where the claim supports one.
+4. Preserve raw machine-readable results, source audits, limitations, and exact commands.
+5. Publish the cumulative result through `reports/reproduction/report.md`, `space/pages/`, and the release manifest.
+
+The fixed local command is:
 
 ```bash
 uv sync --frozen
 uv run --frozen python -m reproduction.run_all
-uv run --frozen marimo edit notebooks/collapse_reproduction.py
 ```
 
-The formal verifier exits nonzero if any claim contract, independent checker,
-or negative control fails. Machine-readable evidence and claim contracts live
-under `.openresearch/artifacts/`; the public report explains which conclusions
-are exact, scoped corroborations, or blocked.
+The locked Python 3.11 environment uses one CPU thread. The cumulative audit run took about 40 seconds locally; no GPU or remote compute was used.
 
----
+## Repository contents
 
-Original workspace description: ICML 2026 agent reproduction workspace for
-`emv2qsi3TG`.
+- [`reproduction/`](reproduction/) — Gaussian criteria, ACE checks, exact schedule enumeration, and independent checkers.
+- [`reports/reproduction/report.md`](reports/reproduction/report.md) — illustrated technical report and limitations.
+- [`notebooks/collapse_reproduction.py`](notebooks/collapse_reproduction.py) — self-contained tutorial notebook.
+- [`.openresearch/artifacts/`](.openresearch/artifacts/) — claim contracts, source audits, raw outputs, and negative controls.
+- [`space/`](space/) — evaluator-visible static Space source and logbook mirror.
+- [`release/`](release/) — release allowlist, manifest, validation summary, and red-team records.
+- [`branch-audit.md`](branch-audit.md) — mapping from former generated branch names to clean names.
+
+## Branch map
+
+`main` is the cumulative publication surface. The focused branches preserve the evidence lineage; the complete migration mapping is in [`branch-audit.md`](branch-audit.md).
+
+| Clean branch | Purpose | Status |
+| --- | --- | --- |
+| [`historical/judged-baseline`](https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse/tree/historical/judged-baseline) | Preserve the accepted 8/12 baseline and the originally judged evidence | Historical record |
+| [`audit/claim6-schedule-enumeration`](https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse/tree/audit/claim6-schedule-enumeration) | Replace the two-expert Claim 6 proxy with exact five-schedule, three-expert enumeration | Claim 6 evidence |
+| [`audit/claims4-5-availability`](https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse/tree/audit/claims4-5-availability) | Complete the four-route availability and falsification audit for Claims 4–5 | Claims 4–5 blocked |
+| [`release/evaluator-candidate`](https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse/tree/release/evaluator-candidate) | Package canonical evidence pages, raw data, report, notebook, and release validation | Release candidate |
+| [`main`](https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse/tree/main) | Current README, report, notebook, and evaluator-visible mirror | Current |
+
+## Citation
+
+```bibtex
+@article{lee2026collapse,
+  title         = {On the Collapse of Generative Paths: A Criterion and Correction for Diffusion Steering},
+  author        = {Lee, Ziseok and Hwang, Minyeong and Lee, Wooyeol and Jo, Sanghyun and Ko, Jihyung and Park, Young Bin and Choi, Jae-Mun and Yang, Eunho and Kim, Kyungsu},
+  journal       = {arXiv preprint arXiv:2512.10339},
+  year          = {2026},
+  doi           = {10.48550/arXiv.2512.10339},
+  url           = {https://arxiv.org/abs/2512.10339}
+}
+```
+
+Paper: [arXiv:2512.10339v2](https://arxiv.org/abs/2512.10339). The official implementation reviewed during the audit is [`ziseoklee/ACE`](https://github.com/ziseoklee/ACE/tree/66534202cb255b6891d5dcbe2e9e18af88ff5615). The historical evaluator artifact remains available in the [DineshAI/emv2qsi3TG Space](https://huggingface.co/spaces/DineshAI/emv2qsi3TG/commit/0f454af2035b713178122b8bd6129cc74e50e11f).
+
+## Thank you
+
+Thank you to Ziseok Lee, Minyeong Hwang, Wooyeol Lee, Sanghyun Jo, Jihyung Ko, Young Bin Park, Jae-Mun Choi, Eunho Yang, and Kyungsu Kim for developing the collapse criterion and ACE correction, and for sharing the paper and implementation that made this independent audit possible. The reproduction keeps blocked claims visibly blocked so that the authors' exact assumptions and contributions remain clear.
+
+## Attribution and limitations
+
+This repository is maintained by [MachineLearning-Nerd](https://github.com/MachineLearning-Nerd). It is not affiliated with the paper's authors. Numerical checks and finite enumerations corroborate the stated claims but do not replace the paper's general proofs. Claims 4 and 5 require unavailable artifacts or compute that preserve their exact experimental contracts.
