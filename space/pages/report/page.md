@@ -167,10 +167,10 @@ The outcome is BLOCKED, not “failed,” “verified,” or “falsified.”
 
 | Experiment | Purpose | Exact run command | Outcome | Compute |
 |---|---|---|---|---|
-| [Judged baseline](https://github.com/MachineLearning-Nerd/icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion/tree/orx/judged-8-of-12-baseline) | Freeze and rerun accepted Claims 1–3 | `uv run --frozen python -m reproduction.run_all` | Claims 1–3 VERIFIED; 4–6 initially BLOCKED | local CPU, 1 thread, 25 s |
-| [Exact schedule triplets](https://github.com/MachineLearning-Nerd/icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion/tree/orx/exact-schedule-triplet-collapse-prevalence) | Replace the Claim 6 proxy | `uv run --frozen python -m reproduction.run_all` | Exact Table E.5 match | local CPU, 1 thread, 20 s |
-| [Availability and falsification audit](https://github.com/MachineLearning-Nerd/icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion/tree/orx/exact-claim-availability-and-falsification-audit) | Four routes each for Claims 4–5 | `uv run --frozen python -m reproduction.run_all` | Both honestly BLOCKED | local CPU, 1 thread, 40 s |
-| [Evaluator-visible candidate](https://github.com/MachineLearning-Nerd/icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion/tree/orx/evaluator-visible-release-candidate) | Canonical pages, raw data, report, and final regression | `uv run --frozen python -m reproduction.run_all` | Cumulative suite plus release validation | local CPU, 1 thread |
+| [Judged baseline](https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse/tree/historical/judged-baseline) | Freeze and rerun accepted Claims 1–3 | `uv run --frozen python -m reproduction.run_all` | Claims 1–3 VERIFIED; 4–6 initially BLOCKED | local CPU, 1 thread, 25 s |
+| [Exact schedule triplets](https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse/tree/audit/claim6-schedule-enumeration) | Replace the Claim 6 proxy | `uv run --frozen python -m reproduction.run_all` | Exact Table E.5 match | local CPU, 1 thread, 20 s |
+| [Availability and falsification audit](https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse/tree/audit/claims4-5-availability) | Four routes each for Claims 4–5 | `uv run --frozen python -m reproduction.run_all` | Both honestly BLOCKED | local CPU, 1 thread, 40 s |
+| [Evaluator-visible candidate](https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse/tree/release/evaluator-candidate) | Canonical pages, raw data, report, and final regression | `uv run --frozen python -m reproduction.run_all` | Cumulative suite plus release validation | local CPU, 1 thread |
 
 Source paper: [arXiv:2512.10339v2](https://arxiv.org/abs/2512.10339).
 Official implementation audited:
