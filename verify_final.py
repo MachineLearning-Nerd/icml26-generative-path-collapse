@@ -77,13 +77,13 @@ def main() -> None:
     }, "release summary")
 
     required_routes = {
-        "current": "space/pages/current/page.md",
-        "claim-1": "space/pages/claims/claim-1/page.md",
-        "claim-2": "space/pages/claims/claim-2/page.md",
-        "claim-3": "space/pages/claims/claim-3/page.md",
-        "claim-4": "space/pages/claims/claim-4/page.md",
-        "claim-5": "space/pages/claims/claim-5/page.md",
-        "claim-6": "space/pages/claims/claim-6/page.md",
+        "current": "pages/current/page.md",
+        "claim-1": "pages/claims/claim-1/page.md",
+        "claim-2": "pages/claims/claim-2/page.md",
+        "claim-3": "pages/claims/claim-3/page.md",
+        "claim-4": "pages/claims/claim-4/page.md",
+        "claim-5": "pages/claims/claim-5/page.md",
+        "claim-6": "pages/claims/claim-6/page.md",
     }
     routes: dict[str, str] = {}
 
@@ -94,7 +94,7 @@ def main() -> None:
 
     collect(logbook["root"])
     for slug, path in required_routes.items():
-        require(routes.get(slug) == path and (ROOT / path).is_file(), f"route {slug}")
+        require(routes.get(slug) == path and (ROOT / "space" / path).is_file(), f"route {slug}")
 
     for number, expected in enumerate(EXPECTED_STATUSES.values(), start=1):
         evidence = json.loads((ROOT / f"space/evidence/c{number}.json").read_text(encoding="utf-8"))
