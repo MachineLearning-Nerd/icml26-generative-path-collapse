@@ -12,6 +12,15 @@ The paper studies inference-time steering that composes diffusion or flow-model 
 
 The live judged score remains **8/12**. This audit records Claims 1, 2, 3, and 6 as **VERIFIED** and Claims 4 and 5 as **BLOCKED**. A conservative post-evaluation forecast is 8–10/12; that forecast is not a new judge result.
 
+## Reproduction dossier
+
+The repository-level audit is summarized in `STATUS.md`. The
+claim-by-claim evidence paths are in `CLAIM_EVIDENCE.md`, with source
+provenance in `SOURCE_AUDIT.md@@, the locked runtime in
+`ENVIRONMENT.md`, and the publication boundary in
+`REPORT.md`. `AUTHOR_THANK_YOU.md` records the thank-you note
+and makes clear that no author endorsement is claimed.
+
 ## Claim and evidence ledger
 
 | Claim | Audit status | How the result is produced |

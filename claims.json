@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "paper": "arXiv:2512.10339v2",
+  "overall_status": "PARTIAL_C1_C2_C3_C6_VERIFIED_C4_C5_BLOCKED",
+  "claims": [
+    {
+      "id": "C1",
+      "title": "Marginal Path Collapse exists",
+      "status": "VERIFIED_SCOPED",
+      "confidence": "HIGH",
+      "historical_points": "2/2",
+      "source_anchors": ["Section 2.2", "Theorem 2.1"],
+      "evidence_paths": ["space/evidence/c1.json"],
+      "production_path": "reproduction/run_all.py::claim_1",
+      "how_claim_is_produced": "Construct a Gaussian witness with positive endpoint precision, negative intermediate precision, and a divergent truncated log-normalizer.",
+      "limitation": "Concrete Gaussian witness; finite corroboration does not re-prove the general theorem."
+    },
+    {
+      "id": "C2",
+      "title": "Path Existence Criterion",
+      "status": "VERIFIED_SCOPED",
+      "confidence": "HIGH",
+      "historical_points": "2/2",
+      "source_anchors": ["Theorem 2.1"],
+      "evidence_paths": ["space/evidence/c2.json", "space/evidence/claim_2_cases.csv"],
+      "production_path": "reproduction/run_all.py::claim_2",
+      "how_claim_is_produced": "Compare the scalar Gaussian precision sign with independent quadrature over 60 seeded cases and compare analytic normalizers.",
+      "limitation": "Finite one-dimensional Gaussian calibration; the universal theorem remains theorem-level."
+    },
+    {
+      "id": "C3",
+      "title": "ACE correction",
+      "status": "VERIFIED_SCOPED",
+      "confidence": "HIGH",
+      "historical_points": "2/2",
+      "source_anchors": ["Theorems 2.2–2.3"],
+      "evidence_paths": ["space/evidence/c3.json"],
+      "production_path": "reproduction/run_all.py::claim_3",
+      "how_claim_is_produced": "Apply two time-varying exponent bumps to collapsed paths and check positivity plus endpoint preservation.",
+      "limitation": "Two constructive instances, not a finite proof of every theorem case."
+    },
+    {
+      "id": "C4",
+      "title": "Synthetic W1/W2/MMD table",
+      "status": "BLOCKED",
+      "confidence": "LOW",
+      "historical_points": "1/2 toy credit",
+      "source_anchors": ["Section 3", "Table 2", "Appendix C.1"],
+      "evidence_paths": ["space/evidence/c4.json"],
+      "production_path": "reproduction/run_all.py::blocked_claim_audits",
+      "how_claim_is_produced": "Audit exact replay, CPU reconstruction, independent resource/metric feasibility, and assumption-preserving falsification.",
+      "limitation": "Exact checkpoints/samples and an authorized CUDA or author-validated CPU path are unavailable."
+    },
+    {
+      "id": "C5",
+      "title": "CrossDock-Weak table",
+      "status": "BLOCKED",
+      "confidence": "LOW",
+      "historical_points": "0/2",
+      "source_anchors": ["Section 3", "Table 3", "Appendix C.2"],
+      "evidence_paths": ["space/evidence/c5.json"],
+      "production_path": "reproduction/run_all.py::blocked_claim_audits",
+      "how_claim_is_produced": "Audit exact protocol/assets, released benchmark identity, independent molecule metrics, and assumption-preserving falsification.",
+      "limitation": "Exact nine-task assets, generated molecules, and authorized Linux/CUDA execution are unavailable."
+    },
+    {
+      "id": "C6",
+      "title": "Collapse fraction versus guidance",
+      "status": "VERIFIED_SCOPED",
+      "confidence": "HIGH",
+      "historical_points": "1/2",
+      "source_anchors": ["Section 4", "Appendix E.2", "Table E.5"],
+      "evidence_paths": ["space/evidence/c6.json", "space/evidence/claim_6_counts.csv"],
+      "production_path": "reproduction/run_all.py::claim_6",
+      "how_claim_is_produced": "Enumerate all 125 ordered schedule triplets, retain the 100 eligible cases, and independently recheck all classifications on a 20,001-point grid.",
+      "limitation": "Exact finite Appendix E.2 domain only; no extrapolation to other schedules."
+    }
+  ]
+}

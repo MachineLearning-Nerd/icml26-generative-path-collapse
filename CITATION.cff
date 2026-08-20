@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If this audit or its evidence package is useful, please cite the paper and this repository."
+title: "Independent claim audit of On the Collapse of Generative Paths"
+version: "0.1.0"
+date-released: 2026-08-20
+authors:
+  - family-names: Lee
+    given-names: Ziseok
+  - family-names: Hwang
+    given-names: Minyeong
+  - family-names: Lee
+    given-names: Wooyeol
+  - family-names: Jo
+    given-names: Sanghyun
+  - family-names: Ko
+    given-names: Jihyung
+  - family-names: Park
+    given-names: Young Bin
+  - family-names: Choi
+    given-names: Jae-Mun
+  - family-names: Yang
+    given-names: Eunho
+  - family-names: Kim
+    given-names: Kyungsu
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse"
+url: "https://arxiv.org/abs/2512.10339"
+doi: "10.48550/arXiv.2512.10339"
+keywords:
+  - diffusion models
+  - generative path collapse
+  - reproduction audit
+  - adaptive path correction

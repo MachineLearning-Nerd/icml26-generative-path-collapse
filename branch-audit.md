@@ -15,7 +15,7 @@ This repository was migrated from opaque OpenResearch-generated branch names to 
 ## Migration guarantees
 
 - Every live branch contains the current README and this branch audit.
-- All reachable commits are attributed to `MachineLearning-Nerd <37579156+MachineLearning-Nerd@users.noreply.github.com>`.
+- All reachable commits are attributed to `MachineLearning-Nerd <MachineLearning-Nerd@users.noreply.github.com>`.
 - Former `orx/*` remote branches are deleted after their clean replacements are published.
 - Active report and README links use the renamed repository and clean branch names.
 - Historical evaluator metadata and the DineshAI Space identifier are preserved as provenance, not as GitHub ownership or branch names.

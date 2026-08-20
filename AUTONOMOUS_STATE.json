@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "paper": "On the Collapse of Generative Paths: A Criterion and Correction for Diffusion Steering",
+  "arxiv": "2512.10339",
+  "phase": "standardized_claim_audit_publication",
+  "overall_status": "PARTIAL_C1_C2_C3_C6_VERIFIED_C4_C5_BLOCKED_HISTORICAL_SCORE_8_OF_12_NO_CURRENT_SCORE",
+  "next_action": "Retain the mixed claim evidence package; do not claim a new score until an external evaluation is available.",
+  "current_score_claim": false,
+  "publication_allowed": false,
+  "author_endorsement_claimed": false,
+  "claim_statuses": {
+    "C1": "VERIFIED_SCOPED",
+    "C2": "VERIFIED_SCOPED",
+    "C3": "VERIFIED_SCOPED",
+    "C4": "BLOCKED",
+    "C5": "BLOCKED",
+    "C6": "VERIFIED_SCOPED"
+  },
+  "source": {
+    "version": "arXiv:2512.10339v2",
+    "retrieved_utc": "2026-07-28T12:12:59Z",
+    "html_sha256": "1ea66da8241cfd6e4e4cf06c4a441218c53ee72b49da82c388436d842cb74f81",
+    "official_code": "ziseoklee/ACE@66534202cb255b6891d5dcbe2e9e18af88ff5615"
+  },
+  "repository": {
+    "owner": "MachineLearning-Nerd",
+    "canonical_email": "MachineLearning-Nerd@users.noreply.github.com",
+    "github": "https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse",
+    "old_slug": "icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion",
+    "branches": 5,
+    "expected_reachable_commits": 13,
+    "pre_normalization_head": "fdea49f3d05a5b526738a549a7b95f231785ff61",
+    "recovery_bundle_sha256": "a2a060b803ee70be4b30608f0118f9f99102a613c4bfa67a6eab31d469a80650"
+  },
+  "historical_external_result": {
+    "live_judge_score": "8/12",
+    "candidate_space": "DineshAI/emv2qsi3TG",
+    "space_revision": "9b6992fe238baa9afd6dae07652bae88a9c53bad",
+    "judged_at": "2026-07-27T16:27:11+00:00"
+  }
+}

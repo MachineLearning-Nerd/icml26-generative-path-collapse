@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "paper": "arXiv:2512.10339v2",
+  "source_sha256": "1ea66da8241cfd6e4e4cf06c4a441218c53ee72b49da82c388436d842cb74f81",
+  "overall_verdict": "PARTIAL_C1_C2_C3_C6_VERIFIED_C4_C5_BLOCKED",
+  "claim_statuses": {
+    "C1": "VERIFIED_SCOPED",
+    "C2": "VERIFIED_SCOPED",
+    "C3": "VERIFIED_SCOPED",
+    "C4": "BLOCKED",
+    "C5": "BLOCKED",
+    "C6": "VERIFIED_SCOPED"
+  },
+  "key_evidence": {
+    "C1": {
+      "endpoint_precision": [0.4999774150805104, 250130.23120601813],
+      "minimum_precision": -9.376471042500807,
+      "truncated_logZ_L20": 1870.7653108121078,
+      "truncated_logZ_L200": 187523.2532593247
+    },
+    "C2": {
+      "cases": 60,
+      "criterion_quadrature_agreement": "60/60",
+      "max_analytic_logZ_relative_error": 4.107305928547298e-15
+    },
+    "C3": {
+      "minimum_before": [-0.9599997731816616, -0.1634550442959073],
+      "minimum_after": [1.0, 0.55],
+      "endpoint_exponents_preserved": true
+    },
+    "C4": {
+      "routes_completed": 4,
+      "final_verdict": "BLOCKED",
+      "historical_judge_verdict": "TOY"
+    },
+    "C5": {
+      "routes_completed": 4,
+      "final_verdict": "BLOCKED",
+      "historical_judge_verdict": "INCONCLUSIVE"
+    },
+    "C6": {
+      "expected_and_observed_counts": [41, 47, 52, 66, 77, 80],
+      "ordered_triplets": 125,
+      "eligible_triplets": 100,
+      "independent_grid_points": 20001,
+      "classification_agreement": true
+    }
+  },
+  "historical_external_result": {
+    "live_judge_score": "8/12",
+    "candidate_space": "DineshAI/emv2qsi3TG",
+    "space_revision": "9b6992fe238baa9afd6dae07652bae88a9c53bad",
+    "judged_at": "2026-07-27T16:27:11+00:00",
+    "current_score_claim": false
+  },
+  "publication": {
+    "publication_allowed": false,
+    "author_endorsement_claimed": false
+  },
+  "boundary": "Claims 1–3 and 6 pass their explicit finite or constructive scopes. Claims 4–5 remain blocked because exact empirical artifacts and an authorized execution path are unavailable. No new score or author endorsement is claimed."
+}
