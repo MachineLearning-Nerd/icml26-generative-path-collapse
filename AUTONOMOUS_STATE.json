@@ -28,7 +28,7 @@
     "github": "https://github.com/MachineLearning-Nerd/icml26-generative-path-collapse",
     "old_slug": "icml26-repro-emv2qsi3TG-on-the-collapse-of-generative-paths-a-criterion-and-correction-for-diffusion",
     "branches": 5,
-    "expected_reachable_commits": 14,
+    "expected_reachable_commits": 16,
     "pre_normalization_head": "fdea49f3d05a5b526738a549a7b95f231785ff61",
     "recovery_bundle_sha256": "a2a060b803ee70be4b30608f0118f9f99102a613c4bfa67a6eab31d469a80650"
   },

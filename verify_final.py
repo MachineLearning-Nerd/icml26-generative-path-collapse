@@ -15,7 +15,7 @@ EXPECTED_BRANCHES = {
     "main",
     "release/evaluator-candidate",
 }
-EXPECTED_COMMITS = 14
+EXPECTED_COMMITS = 16
 CANONICAL_IDENTITY = "MachineLearning-Nerd <MachineLearning-Nerd@users.noreply.github.com>"
 EXPECTED_STATUSES = {
     "C1": "VERIFIED_SCOPED",
